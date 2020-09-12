@@ -34,6 +34,7 @@ Követelménylista
     - Trigonometrikus műveletek (sin, cos, tan)
     - Gyökvonás
     - Hatványozás
+    - Reciprok
 7. Maximum számjegylimit
 8. Kellemes színvilág
 9. Sötét mód
