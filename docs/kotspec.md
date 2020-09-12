@@ -43,3 +43,12 @@ Követelménylista
 
 Fogalomszótár
 -------------
+* Kamat: Egy pénzösszeg, amit a befektetésünk névértéke után fizet meg az, akinek a tőkénket kölcsönadtuk.
+
+* Kamatos kamat: A tőke kamatokkal növelt értéke után kapott újabb kamat.
+
+* Amortizáció: A befektetett javak elhasználódásának, avulásának pénzben kifejezett értéke.
+
+* Jelenérték: Kifejezi, hogy a jövőben egy egységnyi pénz hány egységnyit ér jelenleg.
+
+* Jövőérték: Kifejezi, hogy jelenleg egy egységnyi pénz mennyit fog érni a jövőben.
