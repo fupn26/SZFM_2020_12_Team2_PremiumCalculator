@@ -23,6 +23,9 @@ Igényelt üzleti folyamatok
 
 A rendszerre vonatkozó szabályok
 --------------------------------
+Az alkalmazást be lehessen integrálni a cég jelenlegi webes rendszerébe. Ehhez szabványos web eszközök használata szükséges: JavaScript, HTML, CSS.
+Az alkalmazásban használt számok akár bizalmas adatok is lehetnek, ezért ne tároljuk őket semmilyen más, külső szerveren, csak a mi cégünk férjen ezekhez hozzá.
+A program működése során a matematikai szabályoknak tegyen eleget, biztosítva a helyes működést.
 
 Követelménylista
 ----------------
