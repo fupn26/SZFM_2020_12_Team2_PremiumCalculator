@@ -7,6 +7,13 @@ Cégünk könyveléssel foglalkozik, különböző hazai cégek és egyéni vál
 
 Vágyálom rendszer
 -----------------
+Dolgozóink munkavégzésének megkönnyítése érdekében szeretnénk egy belsős felhasználású, személyre szabott számológépet.
+Célunk ezzel, hogy minden szükséges számítási feladatot gördülékenyen lehessen elvégezni, ezzel elősegítve vállalatunk termelékenységének növekedését.
+Szeretnénk, hogy dolgozóink egyszerűen tudják kezelni ezt az integrált belsős számológépet.
+A számológép letisztult legyen, ne tartalmazzon olyan funkciókat, amire a dolgozók munkavégzése során nincs szükség.
+A szükséges funkciók elérése legyen magától értetődő, ne teljen a dolgozó munkaideje azok keresgélésével.
+A megjelenés elengedhetetlen szempontja, hogy színvilágában egységes legyen és a speciális igényű (például színtévesztő) dolgozóink is problémamentesen tudják használni a számológépet.
+Továbbá kiemelendő, hogy a számológép több, különféle eszközön akadálymentesen legyen használható, ugyanis a munkavégzés során szükséges az alkalmazás tablet vagy mobil eszközről történő elérése.
 
 Jelenlegi üzleti folyamatok
 ---------------------------
