@@ -37,8 +37,8 @@ Követelménylista
     - Reciprok
 7. Maximum számjegylimit
 8. Kellemes színvilág
-9. Sötét mód
-10. Színvak mód
+    - Sötét mód
+    - Színvak mód
 
 Fogalomszótár
 -------------
