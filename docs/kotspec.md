@@ -17,6 +17,9 @@ Továbbá kiemelendő, hogy a számológép több, különféle eszközön akad�
 
 Jelenlegi üzleti folyamatok
 ---------------------------
+1. Számolások elvégzése: számolási igény felmerülése &rarr; Windows beépített számológépének megnyitása &rarr; számolási feladat elvégzése
+
+2. Személyre szabás: a számológép megjelenése bizonyos esetekben nem megfelelő &rarr; számos, különböző helyen lévő beállítás felkeresése &rarr; megjelenés nehézkes testreszabása
 
 Igényelt üzleti folyamatok
 --------------------------
