@@ -23,10 +23,9 @@ Jelenlegi üzleti folyamatok
 
 Igényelt üzleti folyamatok
 --------------------------
-Igényelt üzleti folymatok:
 1. Számolások elvégzése: számolási igény felmerülése &rarr; a saját weboldalba integrált számológép megnyitása &rarr; számolási feladat elvégzése
 
-2. Személyre szabás: felmerül a számológép testreszabásának igénye &rarr; számológép saját testreszabási menüpontjának megnyitása ->  megjelenés egyszerű, egyedi igényekhez igazodó testreszabása
+2. Személyre szabás: felmerül a számológép testreszabásának igénye &rarr; számológép saját testreszabási menüpontjának megnyitása &rarr; megjelenés egyszerű, egyedi igényekhez igazodó testreszabása
 
 A rendszerre vonatkozó szabályok
 --------------------------------
