@@ -81,3 +81,9 @@ Funkció-követelmény megfeleltetés
 
 Fogalomszótár
 -------------
+* Platformfüggetlen szoftver: Olyan szoftver, mely az összes asztali és mobil operációs rendszeren használható.
+* Reszponzív design: A felhasználói felület képes alkalmazkodni a képrenyő méretéhez, vagyis a felhasználó számára
+* Javascript: Programozási nyelv, melyet főleg weboldalakban használnak, azok parancsnyelveként.
+* HTML: Leíró nyelv, melyet weboldalak készítéséhez használnak.
+* CSS: Stílusleíró nyelv, mellyel a weboldalak megjelenésést lehet meghatározni.
+* Leíró nyelv: Olyan mesterséges nyelv, melyben az egyes elemeket  &ndash; például szövegeket vagy képeket &ndash; valamilyen jelöléssel látunk el.
