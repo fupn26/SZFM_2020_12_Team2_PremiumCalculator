@@ -9,6 +9,11 @@ Rendszer céljai, nem céljai
 * támogatást nyújtson látás problémákkal küzdő alkalmazottak munkáját.
 * személyreszabható felhasználói felületet nyújtson, ezzel hatékonyabbá tegye az egyes részlegeken dolgozók munkáját.
 
+### A rendszernek nem célja, hogy:
+* teljesen helyettesítse a tudományos számológépeket.
+* az alkalmazottak munkájához szükséges műveleteken felül egyéb műveleteket biztosítson.
+
+
 Jelenlegi helyzet leírása
 -------------------------
 
