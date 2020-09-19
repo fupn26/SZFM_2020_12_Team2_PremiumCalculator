@@ -78,6 +78,14 @@ Forgatókönyvek
 
 Funkció-követelmény megfeleltetés
 ---------------------------------
+- K01: Az intuitív user interface megvalósítását egy letisztult kinézetű CSS-el, és könnyen értelmezhető kiosztású HTML-el oldjuk meg.
+- K02: A számok tördelését, operációmegjelenítést JavaScript segítségével valósítjuk meg, az operációgombokat a számgomboktól CSS segítségével különítjük el.
+- K03: A reszponzív design CSS segítségével történik, hogy átméretezhető legyen az ablak, és számos felbontással kompatibilis legyen.
+- K04: Mivel egyszerű JavaScripttel történik a megvalósítás, a program kompatibilis lesz mobil eszközökkel, bármelyik standard Android vagy iOS böngésző segítségével.
+- K05: A Clear gomb feladatának megoldása JavaScripttel történik, hasonlóan az operációgombokhoz.
+- K06: Matematikai műveletek operációgombokként jelennek meg, ezeket lehet használni változatos célokra. (ld. használati eset diagram).
+- K07: A maximum számjegylimit szintén JavaScript segítségével kerül megoldásra, melyben bizonyos számú karakternél nem engedünk többet egyszerre beírni.
+- K08: A felhasználó többféle színséma közül választhat, ezzel megoldjuk a színvak és éjjeli módokat is.
 
 Fogalomszótár
 -------------
