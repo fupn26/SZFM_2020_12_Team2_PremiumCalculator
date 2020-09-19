@@ -13,6 +13,9 @@ Vágyálom rendszer leírása
 
 Rendszerre vonatkozó szabályok
 ------------------------------
+Az alkalmazást be lehessen integrálni a cég jelenlegi webes rendszerébe. Ehhez szabványos web eszközök használata szükséges: JavaScript, HTML, CSS.
+Az alkalmazásban használt számok akár bizalmas adatok is lehetnek, ezért ne tároljuk őket semmilyen más, külső szerveren, csak a cég férjen ezekhez hozzá.
+A program működése során a matematikai szabályoknak tegyen eleget, biztosítva a helyes működést.
 
 Jelenlegi üzleti folyamatok
 ---------------------------
