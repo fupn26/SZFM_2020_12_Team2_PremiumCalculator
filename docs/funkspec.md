@@ -7,7 +7,8 @@ Rendszer céljai, nem céljai
 * szükségtelenné tegye külsős fejlesztők alkalmazásának használatát.
 * egységes megoldást biztosítson a cég számára a számítások elvézéséhez.
 * támogatást nyújtson látás problémákkal küzdő alkalmazottak munkáját.
-* személyreszabható felhasználói felületet nyújtson, ezzel hatékonyabbá tegye az egyes részlegeken dolgozók munkáját.
+* intuitív felhasználói felületet biztosítson.
+* a felhasználói felületet személyreszabható legyen, ezzel hatékonyabbá téve az egyes részlegeken dolgozók munkáját.
 
 ### A rendszernek nem célja, hogy:
 * teljesen helyettesítse a tudományos számológépeket.
