@@ -35,15 +35,15 @@ A program működése során a matematikai szabályoknak tegyen eleget, biztosí
 
 Követelménylista
 ----------------
-1. Intuitív, felhasználóbarát UI
-2. Grafikus megjelenítés
+- K01: Intuitív, felhasználóbarát UI
+- K02: Grafikus megjelenítés
     - Számok 3 számjegyenkénti tördelése olvashatóság érdekében.
     - Végzett operáció megjelenítése
     - Szám és operációgombok megkülönböztetése
-3. Reszponzív design
-4. Mobilos kompatibilitás
-5. Clear gomb, mely törli a jelenlegi számot, operációt.
-6. Matematikai műveletek
+- K03: Reszponzív design
+- K04: Mobilos kompatibilitás
+- K05: Clear gomb, mely törli a jelenlegi számot, operációt.
+- K06: Matematikai műveletek
     - Összeadás
     - Kivonás
     - Szorzás
@@ -52,10 +52,11 @@ Követelménylista
     - Gyökvonás
     - Hatványozás
     - Reciprok
-7. Maximum számjegylimit
-8. Kellemes színvilág
+- K07: Maximum számjegylimit
+- K08: Kellemes színvilág
     - Sötét mód
     - Színvak mód
+
 
 Fogalomszótár
 -------------
