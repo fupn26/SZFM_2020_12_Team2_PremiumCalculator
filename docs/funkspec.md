@@ -32,8 +32,13 @@ Használati esetek
 Képernyőtervek
 --------------
 
-Forgatókönyv
-------------
+Forgatókönyvek
+--------------
+1. Az alkalmazott a céges szoftverben megnyitja az alkalmazást. Mivel késő van, zavarja a szemét a világos kijelző, ezért inkább a sötét módot választja. Ezután egy Áfa összeget szeretne kiszámolni, az új szoftver nettó 2.460.000Ft-os ára után elkönyvelendő áfa összegét: 2460000 * 0.27 =  664200. Most egy darabig nincs szükség a programra, így bezárja azt.
+
+2. Egy könyvelő a belső rendszerből elindítja a programot. Nappal van, marad a világos módnál. Ki szeretné számolni, hogy egy cég 10 millió forintos tartós befektetése, évi 3%-os kamattal 5 év múlva hány Forintra gyarapodik, amennyiben a bank a kamatot jóváírja az összeghez minden kamatfizetéskor. Ehhez a következőt üti be: 10000000 * 1.03^5, és a 11 592 741 eredményt kapja. Ezután egy másik számolást is elvégez, de előtte az előzőt az AC gombbal kinullázza. A másik számolás, ha ugyanezt a 10 milliót 3 évre, Premium Magyar Állampapírba fekteti a cég, mely az évi infláció felett 1% reálhozamot ad. Ez jelenleg  4.4% nominális kamatot jelent. A következőkre kattint: 10000000 * 0.044 * 3. Az eredmény: 1 320 000 Forint hozam 3 év alatt. Végül a könyvelő bezárja az alkalmazást.
+
+3. Dolgozónk ismét megnyitja a céges rendszerből a programot. Ezúttal azt szeretné kiszámolni, hogy a három éves, 10 millió forintos bekerülési értékű személygépkocsinak mennyi most a nettó értéke, ha a cég lineáris amortizációval 10 év alatt tervezte az autót leírni. Ehhez következő számolást végzi: 10000000 * (1-(100/10)*3/100), a végeredmény: 7 millió forint. Ezt követően bezárja a programot.
 
 Funkció-követelmény megfeleltetés
 ---------------------------------
