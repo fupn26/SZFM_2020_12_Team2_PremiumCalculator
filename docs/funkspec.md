@@ -61,6 +61,7 @@ Követelménylista
 
 Használati esetek
 -----------------
+![A diagram showing the various use cases for the PremiumCalculator program.](./images/use_cases.png "Use cases for PremiumCalculator")
 
 Képernyőtervek
 --------------
