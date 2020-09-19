@@ -81,7 +81,7 @@ Funkció-követelmény megfeleltetés
 - K01: Az intuitív user interface megvalósítását egy letisztult kinézetű CSS-el, és könnyen értelmezhető kiosztású HTML-el oldjuk meg.
 - K02: A számok tördelését, operációmegjelenítést JavaScript segítségével valósítjuk meg, az operációgombokat a számgomboktól CSS segítségével különítjük el.
 - K03: A reszponzív design CSS segítségével történik, hogy átméretezhető legyen az ablak, és számos felbontással kompatibilis legyen.
-- K04: Mivel egyszerű JavaScripttel történik a megvalósítás, a program kompatibilis lesz mobil eszközökkel,bármelyik standard Android vagy iOS böngésző segítségével.
+- K04: Mivel egyszerű JavaScripttel történik a megvalósítás, a program kompatibilis lesz mobil eszközökkel, bármelyik standard Android vagy iOS böngésző segítségével.
 
 Fogalomszótár
 -------------
