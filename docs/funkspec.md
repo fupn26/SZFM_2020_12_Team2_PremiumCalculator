@@ -84,6 +84,7 @@ Funkció-követelmény megfeleltetés
 - K04: Mivel egyszerű JavaScripttel történik a megvalósítás, a program kompatibilis lesz mobil eszközökkel, bármelyik standard Android vagy iOS böngésző segítségével.
 - K05: A Clear gomb feladatának megoldása JavaScripttel történik, hasonlóan az operációgombokhoz.
 - K06: Matematikai műveletek operációgombokként jelennek meg, ezeket lehet használni változatos célokra. (ld. használati eset diagram).
+- K07: A maximum számjegylimit szintén JavaScript segítségével kerül megoldásra, melyben bizonyos számú karakternél nem engedünk többet egyszerre beírni.
 
 Fogalomszótár
 -------------
