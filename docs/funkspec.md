@@ -25,6 +25,27 @@ Igényelt üzleti folyamatok
 
 Követelménylista
 ----------------
+- K01: Intuitív, felhasználóbarát UI
+- K02: Grafikus megjelenítés
+    - Számok 3 számjegyenkénti tördelése olvashatóság érdekében.
+    - Végzett operáció megjelenítése
+    - Szám és operációgombok megkülönböztetése
+- K03: Reszponzív design
+- K04: Mobilos kompatibilitás
+- K05: Clear gomb, mely törli a jelenlegi számot, operációt.
+- K06: Matematikai műveletek
+    - Összeadás
+    - Kivonás
+    - Szorzás
+    - Osztás
+    - Trigonometrikus műveletek (sin, cos, tan)
+    - Gyökvonás
+    - Hatványozás
+    - Reciprok
+- K07: Maximum számjegylimit
+- K08: Kellemes színvilág
+    - Sötét mód
+    - Színvak mód
 
 Használati esetek
 -----------------
