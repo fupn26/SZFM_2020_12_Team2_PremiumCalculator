@@ -86,7 +86,7 @@ A program 2 fő osztályt tartalmaz:
 - K08 (Kellemes színvilág):
     - A program *normál*, *sötét* és *színvak* módokat biztosítja.
     - Mindegyik mód kap egy külön CSS fájlt, mely meghatározza az egyes HTML elemek színét.
-    - A módok közötti váltást a JavaScript kódon belül, az aktuális stílusfájl kicserélésével történik. 
+    - A módok közötti váltás a JavaScript kódon belül, az aktuális stílusfájl kicserélésével történik. 
 
 ### Tesztterv
 A tesztelés tekintetében két fő részre bonthatjuk az eseteket:
