@@ -53,6 +53,9 @@ Hogyan
 - K06 (Matematikai műveletek): 
     - A matematikai műveletek megvalósításához a JavaScript Math objektuma lesz használva. 
     - Annak függvényében, hogy egy vagy két paraméteres műveletről van szó, a program az adott inputra azonnal visszaadja az eredményt vagy pedig vár a második paraméterre. 
+- K07 (Számjegylimit): 
+    - A számjegylimit úgy lesz megvalósítva, hogy a felhasználó meghatározott számú karaktert írhat be a szöveges mezőbe. 
+    - Ha a számítás eredménye túl nagy lesz, akkor hibaüzenet fog megjelenni.  
 
 
 Mikor
