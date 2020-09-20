@@ -82,6 +82,19 @@ Hogyan
     - Mindegyik mód kap egy külön CSS fájlt, mely meghatározza az egyes HTML elemek színét.
     - A módok közötti váltást a JavaScript kódon belül, az aktuális stílusfájl kicserélésével történik. 
 
+### Tesztterv
+A tesztelés tekintetében két fő részre bonthatjuk az eseteket:
+- a megfelelő megjelenés tesztelése és
+- a matematikai számítások pontossága és a kivételes esetek kezelése.
+
+Megjelenés tesztelése:
+- megfelelően vált színt az alkalmazás, az adott módra történő váltás esetén
+- adott funkció vagy szám gomb lenyomása esetén változik-e a gomb árnyalata, ezzel visszajelzést küldve a felhasználónak
+
+Matematikai számítások és kivételek tesztelése:
+- a matematikai műveletek eredménye megfelelő-e
+- bizonyos műveletek esetén a lehetséges kivételes esetek megfelelő kezelése (például nullával való osztás)
+
 Mikor
 -----
 A rendszert legkésőbb 2020. szeptember 28-ig véglegesíteni kell.
