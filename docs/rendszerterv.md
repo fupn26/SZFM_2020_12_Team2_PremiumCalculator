@@ -31,6 +31,10 @@ Miért
 Hogyan
 ------
 ### Követelmények
+- K01 (Intuitív UI):
+    - Úgy kell kialakítani, hogy használata egyértelmű legyen
+    - Az egyes funkciókat határozottan el kell különíteni egymástól, ezzel növelve az átláthatóságot.
+    - A felhasználó számára biztosítani kell, hogy a korábban beírt karaktersorozatot módosíthassa. (ld. Clear gomb)
 
 Mikor
 -----
