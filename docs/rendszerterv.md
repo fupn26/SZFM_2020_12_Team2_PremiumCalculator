@@ -12,7 +12,7 @@ Mit
 - Az alkalmazás prototípusa "dark mode"-ban
 ![A picture of the PremiumCalculator program with the dark color settings.](./images/prototype_dark.png "The dark layout.")
 #### Elemek a kijelzőn
-
+![A picture of the PremiumCalculator program, with annotations.](./images/prototype_annotated.png "Elements on the screen.")
 
 Miért
 -----
