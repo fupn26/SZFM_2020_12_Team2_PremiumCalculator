@@ -18,6 +18,7 @@ Mit
 ![A picture of the PremiumCalculator program, with annotations.](./images/prototype_annotated.png "Elements on the screen.")
 - A: A böngészőablak, amiben az oldal meg van nyitva.
 - B: A kijelző. Ezen megjelenik az aktuális szám, melyet beírtunk vagy eredményként kaptunk, illetve ha végzünk operációt, ami ehhez a számhoz vezetett
+
 Miért
 -----
 
