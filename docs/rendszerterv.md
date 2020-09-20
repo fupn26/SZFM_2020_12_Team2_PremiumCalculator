@@ -51,6 +51,12 @@ A rendszernek nem célja, hogy teljes mértékben helyettesítsen egy tudományo
 
 Hogyan
 ------
+### Implementációs terv
+![Class diagram of the PremiumCalculator program.](./images/prototype_classdiagram.png "Basic structure of the program.")
+A program 2 fő osztályt tartalmaz:
+- A __CalculationHandler__ osztály felel a számítások helyes elvégzéséért. Tartalmazza az egyes műveletek implementációit.
+- A __UiController__ osztály kezeli a felhasználói felületen kiváltott eseményeket, mint a színmód váltása, a szám formázása sé az eredmény kiírása.
+
 ### Követelmények
 - K01 (Intuitív UI):
     - Úgy kell kialakítani, hogy használata egyértelmű legyen
