@@ -56,7 +56,10 @@ Hogyan
 - K07 (Számjegylimit): 
     - A számjegylimit úgy lesz megvalósítva, hogy a felhasználó meghatározott számú karaktert írhat be a szöveges mezőbe. 
     - Ha a számítás eredménye túl nagy lesz, akkor hibaüzenet fog megjelenni.  
-
+- K08 (Kellemes színvilág):
+    - A program *normál*, *sötét* és *színvak* módokat biztosítja.
+    - Mindegyik mód kap egy külön CSS fájlt, mely meghatározza az egyes HTML elemek színét.
+    - A módok közötti váltást a JavaScript kódon belül, az aktuális stílusfájl kicserélésével történik. 
 
 Mikor
 -----
