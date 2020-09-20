@@ -95,3 +95,5 @@ Fogalomszótár
 * HTML: Leíró nyelv, melyet weboldalak készítéséhez használnak.
 * CSS: Stílusleíró nyelv, mellyel a weboldalak megjelenését lehet meghatározni.
 * Leíró nyelv: Olyan mesterséges nyelv, melyben az egyes elemeket  &ndash; például szövegeket vagy képeket &ndash; valamilyen jelöléssel látunk el.
+* Színvak mód: A felhasználói felület színét úgy módosítja, hogy a színtévesztéssel küzdő felhasználók is kényelmesen használhatják azt.
+* Éjjeli mód: Az éjjeli mód során a felhasználói felület sötét árnyalatot kap, ezzel kímélve a szemet, valamint a kijelző energiagazdálkodását is segíti OLED technológia esetén.
