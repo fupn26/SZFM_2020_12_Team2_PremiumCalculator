@@ -21,6 +21,7 @@ A megrendelő cég könyveléssel foglalkozik, különböző hazai cégek és eg
 
 Vágyálom rendszer leírása
 -------------------------
+A megrendelő dolgozóinak munkavégzésének megkönnyítése céljából szeretne egy kizárólag belsős felhasználású, személyre szabott számológépet. Ezzel célja a számítási feladatok gördülékeny elvégzése, ezzel elősegítve a vállalat termelékenységének növekedését. A megrendelő kívánsága egy intuitív, egyszerűen kezelhető, integrált számológép. Igény továbbá a letisztultság, illetve a munkavégzés során nem használt funkciók se jelenjenek meg benne. Viszont azon funkciók elérése, melyek szükségesek, legyen magától értetődő, azok felkeresése, használata ne emésszen fel felesleges időt. Fontos szempont még az elkészült számológép megjelenése. Színvilága legyen egységes, de a speciális igényű munkavégzők (például színtévesztő) számára se okozzon problémát a használata. A megrendelő munkavállalói több különféle eszközön is használni fogják, az elkészült számológépet, így fontos szem előtt tartani, hogy az alkalmazás tablet és mobil eszközökön is megfelelően jelenjen meg, funkcióiból ne veszítsen. Tehát a reszponzív dizájn is sarkalatos pontja kell, hogy legyen az elkészült alkalmazásnak.
 
 Rendszerre vonatkozó szabályok
 ------------------------------
