@@ -71,6 +71,8 @@ Használati esetek
 
 Képernyőtervek
 --------------
+- Az alkalmazás prototípusa az alap színösszeállítással
+![A picture of the PremiumCalculator program with the base color settings.](./images/prototype_normal.png "The base layout.")
 
 Forgatókönyvek
 --------------
