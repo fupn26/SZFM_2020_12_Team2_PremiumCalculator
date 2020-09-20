@@ -14,6 +14,9 @@ Mit
 
 - Az alkalmazás prototípusa "dark mode"-ban, tablet eszközön
 ![A picture of the PremiumCalculator program with the dark color settings on a tablet device.](./images/prototype_tablet_dark.png "The dark layout on tablet.")
+
+- Az alkalmazás prototípusa "dark mode"-ban, mobil eszközön
+![A picture of the PremiumCalculator program with the dark color settings on a mobile device.](./images/prototype_mobile_dark.png "The dark layout on mobile.")
 #### Elemek a kijelzőn
 ![A picture of the PremiumCalculator program, with annotations.](./images/prototype_annotated.png "Elements on the screen.")
 - A: A böngészőablak, amiben az oldal meg van nyitva.
