@@ -74,6 +74,9 @@ Képernyőtervek
 - Az alkalmazás prototípusa az alap színösszeállítással
 ![A picture of the PremiumCalculator program with the base color settings.](./images/prototype_normal.png "The base layout.")
 
+- Az alkalmazás prototípusa "dark mode"-ban
+![A picture of the PremiumCalculator program with the dark color settings.](./images/prototype_dark.png "The dark layout.")
+
 Forgatókönyvek
 --------------
 1. Az alkalmazott a céges szoftverben megnyitja az alkalmazást. Mivel késő van, zavarja a szemét a világos kijelző, ezért inkább a sötét módot választja. Ezután egy Áfa összeget szeretne kiszámolni, az új szoftver nettó 2.460.000Ft-os ára után elkönyvelendő áfa összegét: 2460000 * 0.27 =  664200. Most egy darabig nincs szükség a programra, így bezárja azt.
