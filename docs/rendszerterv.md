@@ -24,9 +24,20 @@ Mit
 - C: A számgombok, melyek lenyomása a kijelzőn szereplő aktív szám végére konkatenálja az adott számjegyet.
 - D: Előjelgomb, melynek lenyomása ha a kijelzőn aktív szám pozitív, negatívvá teszi, ha pedig az aktív szám pozitív, akkor negatívvá teszi.
 - E: Tizedespont, mely lehetőve teszi a számok tizedestörtként való megadását. A szám egészrészét a gomb lenyomása előtt adjuk meg, a törtrészét pedig a gomb lenyomása után.
+- F: Operációgombok, melyek lenyomása a jelenleg kijelzőn szereplő aktív számot első (vagy egyparaméteres operáció esetén egyetlen) paraméterként véve, az operációt elvégzik, vagy ha arra szükség van, az operáció elvégzése előtt extra paramétereket várnak.
+- G: Eredménygomb, melynek lenyomása a kijelzőn jelenleg szereplő kifejezés értékét megjeleníti számként.
+- H: Clear gomb, melynek lenyomása a kijelző tartalmát törli.
+- I: Törlés gomb, melynek lenyomása a legutóbb bevitt karaktert törli.
+- J: Egy legördülő színséma menü, melyre kattintva látunk egy listát, melyen változatos színsémák nevei szerepelnek. Ezek egyikét kiválasztva az adott színsémára váltunk, ami megváltoztatja a számológép és a háttér megjelenését. Ezen belül választhatunk specifikus szituációkban hasznos módokat is, például sötét mód éjszakai használatra, vagy színvak mód, melyben bizonyos színlátási zavarokat kompenzáló sémák vannak, hogy könnyen megkülönböztethetőek legyenek az eltérő színű elemek.
 
 Miért
 -----
+A rendszer legfőbb célja, hogy egy egységes felületet biztosítson a cég alkalmazottai számára a számítások elvégzéséhez. A rendszer integrálható kell, hogy legyen a cég eddigi rendszerébe, így szükségtelenné tegye a korábban használt, külső, nem egységes szolgáltatásokat. Ehhez szabványos web eszközök használata szükséges: JavaScript, HTML, CSS.
+Cél, hogy az alkalmazás különböző eszközökön is (például mobil, tablet) zökkenőmentesen működjön, reszponzív design alkalmazásával. 
+A felületnek intuitívnak, egyértelműnek kell lennie, hogy mindenki el tudjon rajta igazodni, ezzel elkerülve a felesleges félreértéseket, bonyodalmakat. A felhasználói felület, illetve a megjelenés legyen testreszabható, ezzel hatékonyabbá téve az egyes részlegeken dolgozók munkáját. Az éjszakai mód is nagyban megkönnyíti a későn dolgozó emberek dolgát, illetve egy speciális mód a látás problémákkal küzdő alkalmazottak munkáját segíti.
+Fontos elvárás, hogy az alkalmazás a matematikai szabályoknak maradéktalanul eleget tegyen, ugyanis ez nagyon fontos a megrendelő számára. A négy alapműveleten túl is szükség van matematikai műveletekre (K06), kiemelt fontosságú ezek közül a hatványozás, mert ez nagyon sok könyveléshez szükséges számolás esetén elengedhetetlen, mint például a kamatos kamat, jelenérték vagy jövőérték kiszámítása. Az elvégzendő operációt jelenítsük meg, illetve a számokat három számjegyenként tördeljük a könnyebb olvashatóság érdekében. A szám-, illetve operációgombok megjelenésükben különüljenek el. Szükséges továbbá egy Clear gomb is, mely törli az eddig beütött inputokat. A maximum számjegylimit a JavaScript segítségével kerül megoldásra, melyben bizonyos számú karakternél nem enged a rendszer többet egyszerre beírni.
+Az alkalmazásban használt számok akár bizalmas adatok is lehetnek, ezért ne tároljuk őket semmilyen más, külső szerveren, csak a cég férjen ezekhez hozzá.
+A rendszernek nem célja, hogy teljes mértékben helyettesítsen egy tudományos számológépet. Továbbá a korábbi rendszerbe integrálás nem képezi a projekt részét, pusztán a beépítés lehetőségeihez teremti elő az alkalmazás oldaláról szükséges feltételeket.
 
 Hogyan
 ------
