@@ -35,6 +35,13 @@ Hogyan
     - Úgy kell kialakítani, hogy használata egyértelmű legyen
     - Az egyes funkciókat határozottan el kell különíteni egymástól, ezzel növelve az átláthatóságot.
     - A felhasználó számára biztosítani kell, hogy a korábban beírt karaktersorozatot módosíthassa. (ld. Clear gomb)
+- K02 (Grafikus megjelenés):
+    - Számok ezres tagolása:
+        - Egy metódus segítségével a program minden a számológép felületén végrehajtott felhasználói interakció esetén ellenőrzi az aktuálisan beírt számot, és átalakítja, ha nagyobb, mint 1000. Az elvégzett művelet eredményét a program alapértelmezetten ezres tagolással jeleníti meg.
+    - Végzett operáció megjelenítése:
+        - Az elvégzett műveletek eredményét egy metódus segítségével megjeleníti a program a felületen úgy, hogy az input mező értékét felülírja.
+    - Szám és operációgombok megkülönböztetése
+        - Az HTML gombokhoz hozzá van rendelve, hogy a számjegyek vagy a funkciógombok osztályába tartoznak. Így a CSS-ben az osztálynevekre történő hivatkozással be lehet állítani egységes színvilágot.
 
 Mikor
 -----
