@@ -16,7 +16,8 @@ Mit
 ![A picture of the PremiumCalculator program with the dark color settings on a tablet device.](./images/prototype_tablet_dark.png "The dark layout on tablet.")
 #### Elemek a kijelzőn
 ![A picture of the PremiumCalculator program, with annotations.](./images/prototype_annotated.png "Elements on the screen.")
-
+- A: A böngészőablak, amiben az oldal meg van nyitva.
+- B: A kijelző. Ezen megjelenik az aktuális szám, melyet beírtunk vagy eredményként kaptunk, illetve ha végzünk operációt, ami ehhez a számhoz vezetett
 Miért
 -----
 
