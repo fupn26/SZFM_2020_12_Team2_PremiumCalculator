@@ -35,6 +35,33 @@ Miért
 
 Hogyan
 ------
+### Követelmények
+- K01 (Intuitív UI):
+    - Úgy kell kialakítani, hogy használata egyértelmű legyen
+    - Az egyes funkciókat határozottan el kell különíteni egymástól, ezzel növelve az átláthatóságot.
+    - A felhasználó számára biztosítani kell, hogy a korábban beírt karaktersorozatot módosíthassa. (ld. Clear gomb)
+- K02 (Grafikus megjelenés):
+    - Számok ezres tagolása:
+        - Egy metódus segítségével a program minden a számológép felületén végrehajtott felhasználói interakció esetén ellenőrzi az aktuálisan beírt számot, és átalakítja, ha nagyobb, mint 1000. Az elvégzett művelet eredményét a program alapértelmezetten ezres tagolással jeleníti meg.
+    - Végzett operáció megjelenítése:
+        - Az elvégzett műveletek eredményét egy metódus segítségével megjeleníti a program a felületen úgy, hogy az input mező értékét felülírja.
+    - Szám és operációgombok megkülönböztetése
+        - Az HTML gombokhoz hozzá van rendelve, hogy a számjegyek vagy a funkciógombok osztályába tartoznak. Így a CSS-ben az osztálynevekre történő hivatkozással be lehet állítani egységes színvilágot.
+- K03, K04 (Reszponzív design és Mobil kompatibilitás):
+    - A reszponzív webdesign eléréséhez a CSS-ben az elemek méretét nem abszolót mértékegységben adjuk meg, hanem relatív mértékegységekben, mint az *em*, *rem*, *vmin* vagy *vmax*.
+    - Mivel webes alkalmazásról van szó, a mobilos kompatibilitás alapból megvalósul. A reszponzív felhasználói felület pedig garantálja a program használhatóságát kijelzőmérettől függetlenül. 
+- K05 (Clear gomb): 
+    - JavaScript segítségvel lesz elérve ez a funkcionalitás. 
+    - Külön függvények fogják tartalmazni, hogy a felhasználó teljes törlést szeretne, vagy csak az utolsó beírt karakter törlését. 
+    - Az utolsó karakter törlését megoldhatjuk a __splice()__ fügvénnyel.
+    - A teljes törlést pedig az input mező értékének a üres stringgé alakításával valósítjuk meg.
+- K06 (Matematikai műveletek): 
+    - A matematikai műveletek megvalósításához a JavaScript Math objektuma lesz használva. 
+    - Annak függvényében, hogy egy vagy két paraméteres műveletről van szó, a program az adott inputra azonnal visszaadja az eredményt vagy pedig vár a második paraméterre. 
+- K07 (Számjegylimit): 
+    - A számjegylimit úgy lesz megvalósítva, hogy a felhasználó meghatározott számú karaktert írhat be a szöveges mezőbe. 
+    - Ha a számítás eredménye túl nagy lesz, akkor hibaüzenet fog megjelenni.  
+
 
 Mikor
 -----
