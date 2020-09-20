@@ -29,6 +29,11 @@ Mit
 - H: Clear gomb, melynek lenyomása a kijelző tartalmát törli.
 - I: Törlés gomb, melynek lenyomása a legutóbb bevitt karaktert törli.
 - J: Egy legördülő színséma menü, melyre kattintva látunk egy listát, melyen változatos színsémák nevei szerepelnek. Ezek egyikét kiválasztva az adott színsémára váltunk, ami megváltoztatja a számológép és a háttér megjelenését. Ezen belül választhatunk specifikus szituációkban hasznos módokat is, például sötét mód éjszakai használatra, vagy színvak mód, melyben bizonyos színlátási zavarokat kompenzáló sémák vannak, hogy könnyen megkülönböztethetőek legyenek az eltérő színű elemek.
+### Fizikai követelmények
+- Fizikai környezet: A program tetszőleges operációs rendszeren működjön, melyen van JavaScript-kompatibilis böngésző, legfőképpen Windows, MacOS, Linux, Android és iOS.
+- A program működjön az irodában található összes számítógépen, és a felhasználók okostelefonjainak túlnyomó többségén, ne legyen magas a számítási, grafikus, vagy memóriaigény.
+- A program teszteléséhez alkalmazzunk egy alkalmas keretrendszert, hogy biztosítsuk a hibamentes működést.
+- A program forráskódja legyen nyílt, hogy amennyiben egy felhasználó módosítani kíván a program múködésén, vagy az alapértelmezett funkcionalitáson felüli elemeket kíván hozzáadni, ezt könnyedén, szabadon megtehesse.
 
 Miért
 -----
