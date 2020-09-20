@@ -50,6 +50,9 @@ Hogyan
     - Külön függvények fogják tartalmazni, hogy a felhasználó teljes törlést szeretne, vagy csak az utolsó beírt karakter törlését. 
     - Az utolsó karakter törlését megoldhatjuk a __splice()__ fügvénnyel.
     - A teljes törlést pedig az input mező értékének a üres stringgé alakításával valósítjuk meg.
+- K06 (Matematikai műveletek): 
+    - A matematikai műveletek megvalósításához a JavaScript Math objektuma lesz használva. 
+    - Annak függvényében, hogy egy vagy két paraméteres műveletről van szó, a program az adott inputra azonnal visszaadja az eredményt vagy pedig vár a második paraméterre. 
 
 
 Mikor
