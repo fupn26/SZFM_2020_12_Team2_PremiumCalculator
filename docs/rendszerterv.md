@@ -2,6 +2,11 @@ Rendszerterv
 ============
 Mit
 ---
+### Funkcionális terv
+#### Rendszer használati esetei, lefutásaik
+#### Képernyő tervek
+#### Elemek a kijelzőn
+
 
 Miért
 -----
