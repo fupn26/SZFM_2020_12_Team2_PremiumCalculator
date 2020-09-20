@@ -1,5 +1,13 @@
 Rendszerterv
 ============
+Mit
+---
+
+Miért
+-----
+
+Hogyan
+------
 
 Mikor
 -----
