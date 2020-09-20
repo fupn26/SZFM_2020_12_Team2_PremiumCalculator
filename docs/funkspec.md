@@ -30,6 +30,9 @@ A program működése során a matematikai szabályoknak tegyen eleget, biztosí
 
 Jelenlegi üzleti folyamatok
 ---------------------------
+1. Számolások elvégzése: számolási igény felmerülése &rarr; a saját weboldalba integrált számológép megnyitása &rarr; számolási feladat elvégzése
+
+2. Személyre szabás: felmerül a számológép testreszabásának igénye &rarr; számológép saját testreszabási menüpontjának megnyitása &rarr; megjelenés egyszerű, egyedi igényekhez igazodó testreszabása
 
 Igényelt üzleti folyamatok
 --------------------------
