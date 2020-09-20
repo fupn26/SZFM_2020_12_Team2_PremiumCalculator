@@ -45,6 +45,11 @@ Hogyan
 - K03, K04 (Reszponzív design és Mobil kompatibilitás):
     - A reszponzív webdesign eléréséhez a CSS-ben az elemek méretét nem abszolót mértékegységben adjuk meg, hanem relatív mértékegységekben, mint az *em*, *rem*, *vmin* vagy *vmax*.
     - Mivel webes alkalmazásról van szó, a mobilos kompatibilitás alapból megvalósul. A reszponzív felhasználói felület pedig garantálja a program használhatóságát kijelzőmérettől függetlenül. 
+- K05 (Clear gomb): 
+    - JavaScript segítségvel lesz elérve ez a funkcionalitás. 
+    - Külön függvények fogják tartalmazni, hogy a felhasználó teljes törlést szeretne, vagy csak az utolsó beírt karakter törlését. 
+    - Az utolsó karakter törlését megoldhatjuk a __splice()__ fügvénnyel.
+    - A teljes törlést pedig az input mező értékének a üres stringgé alakításával valósítjuk meg.
 
 
 Mikor
