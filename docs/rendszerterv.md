@@ -42,6 +42,10 @@ Hogyan
         - Az elvégzett műveletek eredményét egy metódus segítségével megjeleníti a program a felületen úgy, hogy az input mező értékét felülírja.
     - Szám és operációgombok megkülönböztetése
         - Az HTML gombokhoz hozzá van rendelve, hogy a számjegyek vagy a funkciógombok osztályába tartoznak. Így a CSS-ben az osztálynevekre történő hivatkozással be lehet állítani egységes színvilágot.
+- K03, K04 (Reszponzív design és Mobil kompatibilitás):
+    - A reszponzív webdesign eléréséhez a CSS-ben az elemek méretét nem abszolót mértékegységben adjuk meg, hanem relatív mértékegységekben, mint az *em*, *rem*, *vmin* vagy *vmax*.
+    - Mivel webes alkalmazásról van szó, a mobilos kompatibilitás alapból megvalósul. A reszponzív felhasználói felület pedig garantálja a program használhatóságát kijelzőmérettől függetlenül. 
+
 
 Mikor
 -----
