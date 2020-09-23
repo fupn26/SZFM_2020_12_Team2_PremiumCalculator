@@ -1,0 +1,92 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    font-weight: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(31, 31, 31);
+}
+
+.calculator-area {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(8, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.calculator-area > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 2px solid rgb(166, 166, 166);
+    outline: none;
+    background-color: rgb(71, 71, 71);
+    color: rgb(166, 166, 166);
+}
+
+.calculator-area > button:hover {
+    background-color: rgb(71, 71, 71);
+}
+
+.calculator-area > button.number{
+    background-color: black;
+}
+
+.calculator-area > button.number:hover {
+    background-color: black;
+}
+
+.calculator-area > button.del {
+    background-color: rgb(184, 0, 6)
+}
+
+.calculator-area > button.del:hover {
+    background-color: rgb(184, 0, 6)
+}
+
+.calculator-area > button.c {
+    background-color: rgb(179, 83, 0)
+}
+
+.calculator-area > button.c:hover {
+    background-color: rgb(179, 83, 0)
+}
+
+.calculator-area > .select-container {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.calculator-area > .select-container > .color-select {
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+    width: 30%;
+    height: 80%;
+    border: 3px solid rgb(100, 100, 100);
+}
+
+.output-area {
+    grid-column: 1 / -1;
+    background-color: rgb(41, 41, 41);
+    color: rgb(166, 166, 166);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    border: 2px solid rgb(166, 166, 166);
+}
+
+.span {
+    grid-row: span 2;
+}

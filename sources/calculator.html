@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Premium Calculator</title>
-    <link rel="stylesheet" href="style_base.css">
+    <link id="current-style" rel="stylesheet" href="style_base.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="calculator-area">
@@ -41,7 +42,7 @@
         <button input-operation>sqrt</button>
         <button input-operation>*</button>
         <div class="select-container">
-            <select class="color-select">
+            <select pick-style class="color-select">
                 <option value="normal" selected="selected">Normal colors</option>
                 <option value="dark">Dark mode</option>
                 <option value="colorblind">Colorblind mode</option>
