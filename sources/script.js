@@ -198,7 +198,7 @@ function calculate() {
             valStack.push(applyOperator(operator, [valStack.pop(), valStack.pop()]));
     }
 
-    tokens=[valStack[0]];
+    tokens=[valStack[0].toString()];
     displayExpression();
     isResultShown = true;
 
@@ -263,11 +263,14 @@ inputOperationButtons.forEach(element => element.addEventListener('click', () =>
     const value = element.value;
     if (value === "sin" || value === "cos" || value == "tan" ||
         value === "abs" || value === "log" || value === "sqrt") {
+        if (!isNaN(tokens[tokens.length-1])){
+            tokens.push("*");
+        }
         tokens.push(value);
         tokens.push("(");
     } else if (value == "1/x") {
-        tokens.push("1");
-        tokens.push("/");
+        tokens.push("^");
+        tokens.push("-1");
     } else if (value === "point") { //TODO what if no number ahead of it?
         const prevToken = tokens[tokens.length - 1];
         if (!isNaN(prevToken) && !prevToken.includes(".")) {
