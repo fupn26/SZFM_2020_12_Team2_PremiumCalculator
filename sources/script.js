@@ -104,15 +104,15 @@ function formatNum(n) {
     }
   }
 
-  //if (dec && dec.length > 3) {
-  //  dec = dec.replace(/(\d{3})/g, "$1,");
-  //}
-
   return num + (dec? '.' + dec : '');
 }
 
 function calculate() {
   console.log("calculate");
+}
+
+function displayResult(result) {
+  document.querySelector('[output-area]').innerHTML = result;
 }
 
 function displayExpression() {
