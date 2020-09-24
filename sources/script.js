@@ -87,6 +87,30 @@ styleSelect.addEventListener('change', select => {
   }
 });
 
+function formatNum(n) {
+  var n = ('' + n).split('.');
+  var num = n[0];
+  var dec = n[1];
+  var r, s, t;
+
+  if (num.length > 3) {
+    s = num.length % 3;
+
+    if (s) {
+      t = num.substring(0,s);
+      num = t + num.substring(s).replace(/(\d{3})/g, ",$1");
+    } else {
+      num = num.substring(s).replace(/(\d{3})/g, ",$1").substring(1);
+    }
+  }
+
+  //if (dec && dec.length > 3) {
+  //  dec = dec.replace(/(\d{3})/g, "$1,");
+  //}
+
+  return num + (dec? '.' + dec : '');
+}
+
 function calculate() {
   console.log("calculate");
 }
@@ -96,9 +120,19 @@ function displayExpression() {
   var outputString = "";
   tokens.forEach(element => {
     if (element === "pi") {
-      outputString += "&#120587;";
-    } else {
-      outputString += element;
+      outputString += "&#120587; ";
+    } 
+    else if (element === ")" && outputString.slice(-1)===" "){
+      outputString = outputString.slice(0,-1) + element + " "
+    }
+    else if (element === "("){
+      outputString += element
+    }
+    else if(!isNaN(element)){
+      outputString += formatNum(element) + " ";
+    }
+    else{
+      outputString += element + " ";
     }
   });
   document.querySelector('[output-area]').innerHTML = outputString;
