@@ -19,7 +19,7 @@ clearButton.addEventListener('click', () => {
 });
 
 deleteButton.addEventListener('click', () => {
-  const prevToken = (tokens.length > 0) ? tokens[tokens.length - 1] : '';
+  const prevToken = tokens[tokens.length - 1];
   if (!isNaN(prevToken)) {
     tokens[tokens.length - 1] = prevToken.slice(0, -1);
     if (tokens[tokens.length - 1].length === 0) {
