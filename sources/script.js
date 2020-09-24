@@ -96,9 +96,16 @@ function displayExpression() {
   var outputString = "";
   tokens.forEach(element => {
     if (element === "pi") {
-      outputString += "&#120587;";
-    } else {
-      outputString += element;
+      outputString += "&#120587; ";
+    } 
+    else if (element === ")" && outputString.slice(-1)===" "){
+      outputString = outputString.slice(0,-1) + element + " "
+    }
+    else if (element === "("){
+      outputString += element
+    }
+    else {
+      outputString += element + " ";
     }
   });
   document.querySelector('[output-area]').innerHTML = outputString;
