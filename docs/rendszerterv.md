@@ -1,11 +1,10 @@
 Rendszerterv
 ============
-Mit
----
-### Funkcionális terv
-#### Rendszer használati esetei, lefutásaik
+Funkcionális terv
+-----------------
+### Rendszer használati esetei, lefutásaik
 ![A diagram showing the process of executing the various use cases for the PremiumCalculator program.](./images/use_case_flowchart.png "Use case flowchart for PremiumCalculator")
-#### Képernyő tervek
+### Képernyő tervek
 - Az alkalmazás prototípusa az alap színösszeállítással
 ![A picture of the PremiumCalculator program with the base color settings.](./images/prototype_normal.png "The base layout.")
 
@@ -17,7 +16,7 @@ Mit
 
 - Az alkalmazás prototípusa "dark mode"-ban, mobil eszközön
 ![A picture of the PremiumCalculator program with the dark color settings on a mobile device.](./images/prototype_mobile_dark.png "The dark layout on mobile.")
-#### Elemek a kijelzőn
+### Elemek a kijelzőn
 ![A picture of the PremiumCalculator program, with annotations.](./images/prototype_annotated.png "Elements on the screen.")
 - A: A böngészőablak, amiben az oldal meg van nyitva.
 - B: A kijelző. Ezen megjelenik az aktuális szám, melyet beírtunk vagy eredményként kaptunk, illetve ha végzünk operációt, ami ehhez a számhoz vezetett
@@ -29,14 +28,14 @@ Mit
 - H: Clear gomb, melynek lenyomása a kijelző tartalmát törli.
 - I: Törlés gomb, melynek lenyomása a legutóbb bevitt karaktert törli.
 - J: Egy legördülő színséma menü, melyre kattintva látunk egy listát, melyen változatos színsémák nevei szerepelnek. Ezek egyikét kiválasztva az adott színsémára váltunk, ami megváltoztatja a számológép és a háttér megjelenését. Ezen belül választhatunk specifikus szituációkban hasznos módokat is, például sötét mód éjszakai használatra, vagy színvak mód, melyben bizonyos színlátási zavarokat kompenzáló sémák vannak, hogy könnyen megkülönböztethetőek legyenek az eltérő színű elemek.
-### Fizikai követelmények
+### Fizikai környezet
 - Fizikai környezet: A program tetszőleges operációs rendszeren működjön, melyen van JavaScript-kompatibilis böngésző, legfőképpen Windows, MacOS, Linux, Android és iOS.
 - A program működjön az irodában található összes számítógépen, és a felhasználók okostelefonjainak túlnyomó többségén, ne legyen magas a számítási, grafikus, vagy memóriaigény.
 - A program teszteléséhez alkalmazzunk egy alkalmas keretrendszert, hogy biztosítsuk a hibamentes működést.
 - A program forráskódja legyen nyílt, hogy amennyiben egy felhasználó módosítani kíván a program múködésén, vagy az alapértelmezett funkcionalitáson felüli elemeket kíván hozzáadni, ezt könnyedén, szabadon megtehesse.
 
-Miért
------
+A rendszer célja
+----------------
 A rendszer legfőbb célja, hogy egy egységes felületet biztosítson a cég alkalmazottai számára a számítások elvégzéséhez. A rendszer integrálható kell, hogy legyen a cég eddigi rendszerébe, így szükségtelenné tegye a korábban használt, külső, nem egységes szolgáltatásokat. Ehhez szabványos web eszközök használata szükséges: JavaScript, HTML, CSS.
 
 Cél, hogy az alkalmazás különböző eszközökön is (például mobil, tablet) zökkenőmentesen működjön, reszponzív design alkalmazásával. 
@@ -49,15 +48,15 @@ Az alkalmazásban használt számok akár bizalmas adatok is lehetnek, ezért ne
 
 A rendszernek nem célja, hogy teljes mértékben helyettesítsen egy tudományos számológépet. Továbbá a korábbi rendszerbe integrálás nem képezi a projekt részét, pusztán a beépítés lehetőségeihez teremti elő az alkalmazás oldaláról szükséges feltételeket.
 
-Hogyan
-------
-### Implementációs terv
+Implementációs terv
+-------------------
 ![Class diagram of the PremiumCalculator program.](./images/prototype_classdiagram.png "Basic structure of the program.")
 A program 2 fő osztályt tartalmaz:
 - A __CalculationHandler__ osztály felel a számítások helyes elvégzéséért. Tartalmazza az egyes műveletek implementációit.
 - A __UiController__ osztály kezeli a felhasználói felületen kiváltott eseményeket, mint a színmód váltása, a szám formázása sé az eredmény kiírása.
 
-### Követelmények
+Követelmények
+-------------
 - K01 (Intuitív UI):
     - Úgy kell kialakítani, hogy használata egyértelmű legyen
     - Az egyes funkciókat határozottan el kell különíteni egymástól, ezzel növelve az átláthatóságot.
@@ -88,7 +87,8 @@ A program 2 fő osztályt tartalmaz:
     - Mindegyik mód kap egy külön CSS fájlt, mely meghatározza az egyes HTML elemek színét.
     - A módok közötti váltás a JavaScript kódon belül, az aktuális stílusfájl kicserélésével történik. 
 
-### Tesztterv
+Tesztterv
+---------
 A tesztelés tekintetében két fő részre bonthatjuk az eseteket:
 - a megfelelő megjelenés tesztelése és
 - a matematikai számítások pontossága és a kivételes esetek kezelése.
@@ -101,10 +101,20 @@ Matematikai számítások és kivételek tesztelése:
 - a matematikai műveletek eredménye megfelelő-e
 - bizonyos műveletek esetén a lehetséges kivételes esetek megfelelő kezelése (például nullával való osztás)
 
-Mikor
------
-A rendszert legkésőbb 2020. szeptember 28-ig véglegesíteni kell.
+Sikeres a tesztelés, ha:
+ - minden jelen lévő funkció az érvényes matematikai szabályok szerint számolja ki a kért eredményt;
+ - minden egyes input kifejezésre megfelelő válasszal tér vissza (helyes kifejezés esetén a megfelelő eredmény, helytelen kifejezés esetén hibaüzenet);
+ - a stíluslap váltások zökkenőmentesen mennek végbe.
 
-Miből
------
-A fejlesztők saját eszközeiket használva dolgoznak a projekten.
+Időbeli megvalósítási terv
+--------------------------
+Az alkalmazás fejlesztése 4 héten keresztül zajlik. A tesztelési időszak az átadást megelőző héten fog zajlani.
+A rendszert, a tesztelések elvégzése után, legkésőbb 2020. szeptember 28-ig véglegesíteni kell.
+
+Telepítési terv
+---------------
+A megrendelő kívánsága szerint elkészített, megfelelően letesztelt számológép a megrendelő saját rendszerének adminisztrátorainak kerül majd átadásra, akik elvégzik annak integrálását a vállalati rendszerbe.
+
+Karbantartási terv
+------------------
+Amennyiben a megrendelő az átadást követően, az alkalmazás használata során abban hibás funkcionalitást talál, akkor a fejlesztő csapat a bejelentést követően elkezdi a hiba feltárását és törekszik annak minél hamarabbi kijavítására. Amint elkészül az alkalmazás hibajavított változata, azt az újabb tesztelést követően a rendszer adminisztrátorok rendelkezésére bocsátja a csapat. Kiemelendő, hogy a hibajavítás utáni tesztelés nem csak a javított funkcionalitás helyességét hivatott ellenőrizni, hanem a korábban jól működőket is.
