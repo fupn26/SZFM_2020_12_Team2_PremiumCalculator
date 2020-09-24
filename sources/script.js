@@ -54,9 +54,9 @@ inputOperationButtons.forEach(element => element.addEventListener('click', () =>
     tokens.push("/");
   } else if (value === "point") { //TODO what if no number ahead of it?
     const prevToken = tokens[tokens.length - 1];
-    if (!isNaN(prevToken)) {
+    if (!isNaN(prevToken) && !prevToken.includes(".")) {
       tokens[tokens.length - 1] = prevToken + ".";
-    } else {
+    } else if (isNaN(prevToken) || tokens.length == 0){
       tokens.push("0.");
     }
   } else if (value == "+/-") {
