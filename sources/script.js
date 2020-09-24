@@ -59,11 +59,9 @@ inputOperationButtons.forEach(element => element.addEventListener('click', () =>
     } else {
       tokens.push("0.");
     }
-  } else if (value == "+/-") { //TODO add functionality to this operator
-    const prevToken = tokens[tokens.length - 1];
-    if (!isNaN(prevToken)) {
-
-    }
+  } else if (value == "+/-") {
+    tokens.push("-");
+    tokens.push("(");
   } else {
     tokens.push(value);
   }
