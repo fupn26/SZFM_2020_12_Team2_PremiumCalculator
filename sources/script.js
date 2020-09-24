@@ -81,9 +81,11 @@ styleSelect.addEventListener('change', select => {
   if (styleSelect.value == 'normal') {
     currStyle.href = "style_base.css"
   }
-
-  if (styleSelect.value == 'dark') {
+  else if (styleSelect.value == 'dark') {
     currStyle.href = "style_dark.css"
+  }
+  else if (styleSelect.value == 'colorblind'){
+    currStyle.href = "style_colorblind.css"
   }
 });
 
