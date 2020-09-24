@@ -85,6 +85,7 @@ body {
     word-wrap: break-word;
     word-break: break-all;
     border: 2px solid rgb(166, 166, 166);
+    font-size: 3em;
 }
 
 .span {
