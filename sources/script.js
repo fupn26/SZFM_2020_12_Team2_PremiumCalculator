@@ -1,4 +1,5 @@
 var tokens = [];
+var calcHistory = [];
 const currStyle = document.getElementById("current-style");
 const styleSelect = document.querySelector('[pick-style]');
 const equalsButton = document.querySelector('[equals]');
@@ -198,11 +199,10 @@ function calculate() {
             valStack.push(applyOperator(operator, [valStack.pop(), valStack.pop()]));
     }
 
+    addExpressionToCalcHistory();
     tokens=[valStack[0].toString()];
     displayExpression();
     isResultShown = true;
-
-
 }
 
 function applyOperator(operator, vals) {
@@ -355,4 +355,32 @@ function displayExpression() {
 
     isResultShown = false;
     displayText(outputString);
+}
+
+function addExpressionToCalcHistory() {
+    const expression = document.querySelector('[output-area]').innerHTML;
+
+    //in the history list there can be only 10 previous expression
+    if (calcHistory.length === 10) {
+        calcHistory.shift();
+    }
+    calcHistory.push({"tokens": tokens, "expression": expression});
+
+    displayExpressionInHistory();
+}
+
+function displayExpressionInHistory() {
+    const historyList = document.getElementById("history-list");
+    historyList.innerHTML = "";
+    calcHistory.forEach(element => {
+        const node = document.createElement('div');
+        node.classList.add('history-item');
+        node.innerHTML = element.expression;
+        node.addEventListener('click', event => {
+            const arrayElement = calcHistory.find(element => element.expression === event.currentTarget.innerHTML);
+            tokens = arrayElement.tokens;
+            displayText(arrayElement.expression);
+        });
+        historyList.appendChild(node);
+    });
 }
