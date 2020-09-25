@@ -439,9 +439,9 @@ function addExpressionToCalcHistory(result) {
 
     //in the history list there can be only 10 previous expression
     if (calcHistory.length === 10) {
-        calcHistory.shift();
+        calcHistory.pop();
     }
-    calcHistory.push({"tokens": tokens, "expression": expression+ " = "+result});
+    calcHistory.unshift({"tokens": tokens, "expression": expression+ " = "+result});
 
     displayExpressionInHistory();
 }
