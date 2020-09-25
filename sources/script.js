@@ -1,10 +1,12 @@
 var tokens = [];
 var calcHistory = [];
+var prevResult = 0;
 const currStyle = document.getElementById("current-style");
 const styleSelect = document.querySelector('[pick-style]');
 const equalsButton = document.querySelector('[equals]');
 const clearButton = document.querySelector('[clear]');
 const deleteButton = document.querySelector('[delete]');
+const ansButton = document.querySelector('[ans]')
 const inputNumberButtons = document.querySelectorAll('[input-number]');
 const inputOperationButtons = document.querySelectorAll('[input-operation]');
 const inputConstant = document.querySelector('[input-constant]');
@@ -203,6 +205,7 @@ function calculate() {
     }
     if(!isNaN(valStack[0])){
         addExpressionToCalcHistory(valStack[0]);
+        prevResult=valStack[0];
         tokens=[valStack[0].toString()];
         displayExpression();
         isResultShown = true;
@@ -252,6 +255,19 @@ deleteButton.addEventListener('click', event => {
     displayExpression();
     event.currentTarget.blur();
 });
+
+ansButton.addEventListener('click', event => {
+
+    if (isResultShown === true){
+        tokens = [];
+    }
+    if (!isNaN(tokens[tokens.length-1])){
+        tokens.push("*");
+    }
+    tokens.push(prevResult);
+    displayExpression();
+    event.currentTarget.blur();
+})
 
 inputNumberButtons.forEach(element => element.addEventListener('click', event => {
 
