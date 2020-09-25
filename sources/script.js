@@ -308,8 +308,8 @@ inputOperationButtons.forEach(element => element.addEventListener('click', event
         } else if (isNaN(prevToken) || tokens.length == 0){
             tokens.push("0.");
         }
-    } else if (value === "+/-" || tokens[tokens.length-1] === "pi" || tokens[tokens.length-1] === ")") {
-        if (!isNaN(tokens[tokens.length-1])){
+    } else if (value === "+/-") {
+        if (!isNaN(tokens[tokens.length-1]) || tokens[tokens.length-1] === "pi" || tokens[tokens.length-1] === ")"){
             tokens.push("*");
         }
         tokens.push("+/-");
