@@ -419,9 +419,9 @@ styleSelect.addEventListener('change', select => {
 });
 
 function formatNum(n) {
-    var n = ('' + n).split('.');
-    var num = n[0];
-    var dec = n[1];
+    var n2 = ('' + n).split('.');
+    var num = n2[0];
+    var dec = n2[1];
     var r, s, t;
 
     if (num.length > 3) {
@@ -435,7 +435,7 @@ function formatNum(n) {
         }
     }
 
-    return num + (dec? '.' + dec : '');
+    return num + (n.includes(".")? '.' + dec : '');
 }
 
 function displayText(result) {
