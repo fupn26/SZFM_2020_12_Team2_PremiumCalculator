@@ -198,11 +198,15 @@ function calculate() {
         else
             valStack.push(applyOperator(operator, [valStack.pop(), valStack.pop()]));
     }
-
-    addExpressionToCalcHistory(valStack[0]);
-    tokens=[valStack[0].toString()];
-    displayExpression();
-    isResultShown = true;
+    if(!isNaN(valStack[0])){
+        addExpressionToCalcHistory(valStack[0]);
+        tokens=[valStack[0].toString()];
+        displayExpression();
+        isResultShown = true;
+    }
+    else{
+        displayText("Error: invalid expression");
+    }
 }
 
 function applyOperator(operator, vals) {
