@@ -299,6 +299,76 @@ inputConstant.addEventListener('click', () => {
     displayExpression();
 });
 
+document.addEventListener('keyup', event => {
+    switch(event.key) {
+        case '0':
+            document.querySelector('[value="0"]').click();
+            break;
+        case '1':
+            document.querySelector('[value="1"]').click();
+            break;
+        case '2':
+            document.querySelector('[value="2"]').click();
+            break;
+        case '3':
+            document.querySelector('[value="3"]').click();
+            break;
+        case '4':
+            document.querySelector('[value="4"]').click();
+            break;
+        case '5':
+            document.querySelector('[value="5"]').click();
+            break;
+        case '6':
+            document.querySelector('[value="6"]').click();
+            break;
+        case '7':
+            document.querySelector('[value="7"]').click();
+            break;
+        case '8':
+            document.querySelector('[value="8"]').click();
+            break;
+        case '9':
+            document.querySelector('[value="9"]').click();
+            break;
+        case '+':
+            document.querySelector('[value="+"]').click();
+            break;
+        case '-':
+            if (!isNaN(tokens[tokens.length - 1]))
+                document.querySelector('[value="-"]').click();
+            else
+                document.querySelector('[value="+/-"]').click();
+            break;
+        case '*':
+            document.querySelector('[value="*"]').click();
+            break;
+        case '/':
+            document.querySelector('[value="/"]').click();
+            break;
+        case '^':
+            document.querySelector('[value="^"]').click();
+            break;
+        case '.':
+        case ',':
+            document.querySelector('[value="point"]').click();
+            break;
+        case '(':
+            document.querySelector('[value="("]').click();
+            break;
+        case ')':
+            document.querySelector('[value=")"]').click();
+            break;
+        case '=':
+        case 'Enter':
+            document.querySelector('[value="equals"]').click();
+            break;
+        case 'Backspace':
+            document.querySelector('[value="delete"]').click();
+            break;
+    }
+});
+
 
 styleSelect.addEventListener('change', select => {
     if (styleSelect.value == 'normal') {
