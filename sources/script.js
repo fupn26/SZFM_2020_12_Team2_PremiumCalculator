@@ -285,8 +285,16 @@ inputOperationButtons.forEach(element => element.addEventListener('click', () =>
         } else if (isNaN(prevToken) || tokens.length == 0){
             tokens.push("0.");
         }
-    } else if (value == "+/-") {
+    } else if (value === "+/-") {
+        if (!isNaN(tokens[tokens.length-1])){
+            tokens.push("*");
+        }
         tokens.push("+/-");
+    } else if (value === "(") {
+        if (!isNaN(tokens[tokens.length-1])){
+            tokens.push("*");
+        }
+        tokens.push(value);
     } else {
         tokens.push(value);
     }
