@@ -199,7 +199,7 @@ function calculate() {
             valStack.push(applyOperator(operator, [valStack.pop(), valStack.pop()]));
     }
 
-    addExpressionToCalcHistory();
+    addExpressionToCalcHistory(valStack[0]);
     tokens=[valStack[0].toString()];
     displayExpression();
     isResultShown = true;
@@ -357,14 +357,14 @@ function displayExpression() {
     displayText(outputString);
 }
 
-function addExpressionToCalcHistory() {
+function addExpressionToCalcHistory(result) {
     const expression = document.querySelector('[output-area]').innerHTML;
 
     //in the history list there can be only 10 previous expression
     if (calcHistory.length === 10) {
         calcHistory.shift();
     }
-    calcHistory.push({"tokens": tokens, "expression": expression});
+    calcHistory.push({"tokens": tokens, "expression": expression+ " = "+result});
 
     displayExpressionInHistory();
 }
@@ -379,7 +379,7 @@ function displayExpressionInHistory() {
         node.addEventListener('click', event => {
             const arrayElement = calcHistory.find(element => element.expression === event.currentTarget.innerHTML);
             tokens = arrayElement.tokens;
-            displayText(arrayElement.expression);
+            displayExpression();
         });
         historyList.appendChild(node);
     });
