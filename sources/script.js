@@ -226,17 +226,19 @@ function applyOperator(operator, vals) {
     return result;
 }
 
-equalsButton.addEventListener('click', () => {
+equalsButton.addEventListener('click', event => {
     displayExpression();
     calculate();
+    event.currentTarget.blur();
 });
 
-clearButton.addEventListener('click', () => {
+clearButton.addEventListener('click', event => {
     tokens = [];
     displayExpression();
+    event.currentTarget.blur();
 });
 
-deleteButton.addEventListener('click', () => {
+deleteButton.addEventListener('click', event => {
     const prevToken = tokens[tokens.length - 1];
     if (!isNaN(prevToken)) {
         tokens[tokens.length - 1] = prevToken.slice(0, -1);
@@ -248,9 +250,10 @@ deleteButton.addEventListener('click', () => {
     }
 
     displayExpression();
+    event.currentTarget.blur();
 });
 
-inputNumberButtons.forEach(element => element.addEventListener('click', () => {
+inputNumberButtons.forEach(element => element.addEventListener('click', event => {
 
     if (isResultShown === true){
         tokens = [];
@@ -264,9 +267,10 @@ inputNumberButtons.forEach(element => element.addEventListener('click', () => {
         tokens.push(element.value);
     }
     displayExpression();
+    event.currentTarget.blur();
 }));
 
-inputOperationButtons.forEach(element => element.addEventListener('click', () => {
+inputOperationButtons.forEach(element => element.addEventListener('click', event => {
     const value = element.value;
     if (value === "sin" || value === "cos" || value == "tan" ||
         value === "abs" || value === "log" || value === "sqrt") {
@@ -300,11 +304,13 @@ inputOperationButtons.forEach(element => element.addEventListener('click', () =>
     }
 
     displayExpression();
+    event.currentTarget.blur();
 }));
 
-inputConstant.addEventListener('click', () => {
+inputConstant.addEventListener('click', event => {
     tokens.push('pi');
     displayExpression();
+    event.currentTarget.blur();
 });
 
 document.addEventListener('keyup', event => {
