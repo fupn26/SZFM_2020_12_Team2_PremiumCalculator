@@ -264,7 +264,7 @@ ansButton.addEventListener('click', event => {
     if (!isNaN(tokens[tokens.length-1])){
         tokens.push("*");
     }
-    tokens.push(prevResult);
+    tokens.push(prevResult.toString());
     displayExpression();
     event.currentTarget.blur();
 })
