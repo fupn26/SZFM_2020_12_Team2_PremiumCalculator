@@ -424,6 +424,10 @@ styleSelect.addEventListener('change', select => {
 });
 
 function formatNum(n) {
+    var negative = n.includes('-')
+    if (negative){
+        n = n.slice(1)
+    }
     var n2 = ('' + n).split('.');
     var num = n2[0];
     var dec = n2[1];
@@ -440,7 +444,7 @@ function formatNum(n) {
         }
     }
 
-    return num + (n.includes(".")? '.' + dec : '');
+    return (negative? '-' : '') + num + (n.includes(".")? '.' + dec : '');
 }
 
 function displayText(result) {
