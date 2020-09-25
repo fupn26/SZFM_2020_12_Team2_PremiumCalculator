@@ -10,6 +10,44 @@ body {
     background-color: rgb(68, 184, 172);
 }
 
+#calculation-history {
+    grid-column: 1 / -1;
+    justify-content: center;
+    align-content: center;
+    background-color: white;
+    margin-bottom: 2em;
+    border: 2px solid black;
+}
+
+#calchist-title {
+    display: inline-block;
+    width: 100%;
+    padding-left: 0.5em;
+    padding-top: 0.3em;
+    padding-bottom: 0.2em;
+    font-size: x-large;
+    border-bottom: 0.1em solid gray
+}
+
+#history-list { 
+    overflow-y: auto;
+    height: 7em;
+    background-color: white;
+}
+
+.history-item {
+    padding-left: 0.5em;
+    width: 100%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: large;
+}
+
+.history-item:hover {
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
 .calculator-area {
     display: grid;
     justify-content: center;
