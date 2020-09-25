@@ -279,6 +279,9 @@ inputNumberButtons.forEach(element => element.addEventListener('click', event =>
     const prevToken = tokens[tokens.length - 1];
     if (!isNaN(prevToken)) {
         tokens[tokens.length - 1] = prevToken + element.value;
+    } else if (prevToken === ")" || prevToken === "pi") {
+        tokens.push("*");
+        tokens.push(element.value);
     } else {
         tokens.push(element.value);
     }
@@ -290,7 +293,7 @@ inputOperationButtons.forEach(element => element.addEventListener('click', event
     const value = element.value;
     if (value === "sin" || value === "cos" || value == "tan" ||
         value === "abs" || value === "log" || value === "sqrt") {
-        if (!isNaN(tokens[tokens.length-1])){
+        if (!isNaN(tokens[tokens.length-1]) || tokens[tokens.length-1] === "pi" || tokens[tokens.length-1] === ")"){
             tokens.push("*");
         }
         tokens.push(value);
@@ -298,20 +301,20 @@ inputOperationButtons.forEach(element => element.addEventListener('click', event
     } else if (value == "1/x") {
         tokens.push("^");
         tokens.push("-1");
-    } else if (value === "point") { //TODO what if no number ahead of it?
+    } else if (value === "point") { 
         const prevToken = tokens[tokens.length - 1];
         if (!isNaN(prevToken) && !prevToken.includes(".")) {
             tokens[tokens.length - 1] = prevToken + ".";
         } else if (isNaN(prevToken) || tokens.length == 0){
             tokens.push("0.");
         }
-    } else if (value === "+/-") {
+    } else if (value === "+/-" || tokens[tokens.length-1] === "pi" || tokens[tokens.length-1] === ")") {
         if (!isNaN(tokens[tokens.length-1])){
             tokens.push("*");
         }
         tokens.push("+/-");
     } else if (value === "(") {
-        if (!isNaN(tokens[tokens.length-1])){
+        if (!isNaN(tokens[tokens.length-1]) || tokens[tokens.length-1] === "pi" || tokens[tokens.length-1] === ")"){
             tokens.push("*");
         }
         tokens.push(value);
@@ -324,6 +327,9 @@ inputOperationButtons.forEach(element => element.addEventListener('click', event
 }));
 
 inputConstant.addEventListener('click', event => {
+    if (!isNaN(tokens[tokens.length-1]) || tokens[tokens.length-1] === "pi" || tokens[tokens.length-1] === ")"){
+        tokens.push("*");
+    }
     tokens.push('pi');
     displayExpression();
     event.currentTarget.blur();
