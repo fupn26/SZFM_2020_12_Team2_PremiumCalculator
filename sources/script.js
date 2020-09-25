@@ -1,6 +1,7 @@
 var tokens = [];
 var calcHistory = [];
 var prevResult = 0;
+var ansAssigned = false;
 const currStyle = document.getElementById("current-style");
 const styleSelect = document.querySelector('[pick-style]');
 const equalsButton = document.querySelector('[equals]');
@@ -209,6 +210,7 @@ function calculate() {
         tokens=[valStack[0].toString()];
         displayExpression();
         isResultShown = true;
+        ansAssigned = true;
     }
     else{
         displayText("Error: invalid expression");
@@ -257,16 +259,17 @@ deleteButton.addEventListener('click', event => {
 });
 
 ansButton.addEventListener('click', event => {
-
-    if (isResultShown === true){
-        tokens = [];
+    if (ansAssigned){
+        if (isResultShown === true){
+            tokens = [];
+        }
+        if (!isNaN(tokens[tokens.length-1]) || tokens[tokens.length-1] === "pi" || tokens[tokens.length-1] === ")"){
+            tokens.push("*");
+        }
+        tokens.push(prevResult.toString());
+        displayExpression();
+        event.currentTarget.blur();
     }
-    if (!isNaN(tokens[tokens.length-1])){
-        tokens.push("*");
-    }
-    tokens.push(prevResult.toString());
-    displayExpression();
-    event.currentTarget.blur();
 })
 
 inputNumberButtons.forEach(element => element.addEventListener('click', event => {
