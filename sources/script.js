@@ -148,14 +148,17 @@ function hasPrecedence(op1, op2) {
 function calculate() {
 
     var bracketCount = 0;
+    var lastBracketOpen = false;
     for(var i = 0; i < tokens.length; i++) {
         if(tokens[i] === "(") {
             bracketCount++;
+            lastBracketOpen = true;
         } else if(tokens[i] === ")") {
             bracketCount--;
+            lastBracketOpen = false;
         }
     }
-    if(bracketCount != 0) {
+    if(bracketCount != 0 || lastBracketOpen) {
         displayText("Error: unbalanced brackets");
         return;
     }
