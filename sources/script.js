@@ -277,7 +277,9 @@ inputNumberButtons.forEach(element => element.addEventListener('click', event =>
 
     console.log(element.value);
     const prevToken = tokens[tokens.length - 1];
-    if (!isNaN(prevToken)) {
+    if (prevToken == "0"){
+        tokens[tokens.length - 1] = element.value
+    } else if (!isNaN(prevToken)) {
         tokens[tokens.length - 1] = prevToken + element.value;
     } else if (prevToken === ")" || prevToken === "pi") {
         tokens.push("*");
