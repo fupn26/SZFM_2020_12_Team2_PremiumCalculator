@@ -43,6 +43,8 @@ Igényelt üzleti folyamatok
 
 2. Személyre szabás: felmerül a számológép testreszabásának igénye &rarr; számológép saját testreszabási menüpontjának megnyitása &rarr; megjelenés egyszerű, egyedi igényekhez igazodó testreszabása
 
+3. Előzmények visszatöltése: felmerül korábbi számítás visszatöltésének igénye &rarr; a szükséges bejegyzés megkeresése az előzmények között &rarr; rákattintás a megfelelő elemre 
+
 Követelménylista
 ----------------
 - K01: Intuitív, felhasználóbarát UI
