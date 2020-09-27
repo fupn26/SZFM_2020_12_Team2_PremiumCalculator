@@ -107,6 +107,8 @@ Funkció-követelmény megfeleltetés
 - K06: Matematikai műveletek operációgombokként jelennek meg, ezeket lehet használni változatos célokra. (ld. használati eset diagram).
 - K07: A maximum számjegylimit szintén JavaScript segítségével kerül megoldásra, melyben bizonyos számú karakternél nem engedünk többet egyszerre beírni.
 - K08: A felhasználó többféle színséma közül választhat, ezzel megoldjuk a színvak és éjjeli módokat is.
+- K09: A felhasználónak lehetősége van egy előzménylistából mkiválasztani, hogy mely korábbi számítását szeretné visszatölteni.
+- K10: A felhasználó billentyűzet segítségével is elvégezheti az összeadás, kivonás, szorzás, osztás és hatványozás műveleteket, nem szükéges a UI gombjait használni. 
 
 Fogalomszótár
 -------------
