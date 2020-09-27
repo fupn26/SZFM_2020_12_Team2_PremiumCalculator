@@ -93,7 +93,7 @@ Követelmények
     - Az előzmény visszatöltése során a teljes kifejezés töltődik vissza, és nem annak az eredménye, ha a felhasználó egérrel választja azt ki.
     - Abban az esetben, ha a felhasználó az ANS gombot használja, az utolsó számítás eredménye töltődik vissza.
 - K10 (Billentyűzet):
-    - A felhasználónak lehetősége billentyűzettel beírni a kívánt műveletet.
+    - A felhasználónak lehetősége van billentyűzettel beírni a kívánt műveletet.
     - Az összeadás, kivonás, szorzás, osztás, hatványozás áll rendelkezésre a műveletek közül. Valamint lehet zárójeleket beírni és negatív számokat is.
     - A program külön kezeli, hogy a "-" jel bevitelekor szám-e az utolsó karakter. Ha nem, akkor negatív előjelnek veszi, ha pedig igen, akkor kivonásnak.
     - Ezeken felül lehet törölni karakterenként a Backspace billentyűvel, valamint az Enter és a "=" billentyű lenyomásával lehet a beírt kifejezést kiértékelni.
