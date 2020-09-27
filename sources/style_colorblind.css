@@ -8,6 +8,7 @@ body {
     padding: 0;
     margin: 0;
     background-color: rgb(70,70,70);
+    font-size: 2vmin;
 }
 
 #calculation-history {
@@ -15,7 +16,7 @@ body {
     justify-content: center;
     align-content: center;
     background-color: white;
-    color: balck;
+    color: black;
     margin-bottom: 2em;
     border: 2px solid black;
 }
@@ -26,7 +27,7 @@ body {
     padding-left: 0.5em;
     padding-top: 0.3em;
     padding-bottom: 0.2em;
-    font-size: x-large;
+    font-size: 2em;
     border-bottom: 0.1em solid gray
 }
 
@@ -40,7 +41,7 @@ body {
     width: 100%;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-    font-size: large;
+    font-size: 1.5em;
 }
 
 .history-item:hover {
@@ -60,7 +61,7 @@ body {
 
 .calculator-area > button {
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 2em;
     border: 2px solid black;
     outline: none;
     background-color: whitesmoke;
