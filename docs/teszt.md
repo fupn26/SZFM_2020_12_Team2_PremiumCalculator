@@ -43,6 +43,8 @@ Tesztelési jegyzőkönyv
 | Mezei Botond |  2020.09.27 12:00  |  8b14297  |  -7^3  |  -343  |  Igen  |  Hatványozás operáció helyessége  |
 | Mezei Botond |  2020.09.27 12:01  |  8b14297  |  3*sin(pi/2)+4  |  7  |  Igen  |  Precedencia helyessége összetettebb műveletek esetén  |
 | Mezei Botond |  2020.09.27 12:04  |  8b14297  |  3+2/6-9*sin(6+3)  |  -0.375733034  |  Igen  |  Precedencia helyessége összetettebb műveletek esetén  |
+| Mezei Botond |  2020.09.27 13:54  |  c0c7563  |  9.3*sin(0)+6/3  |  2  |  Igen  |  Precedencia helyessége összetettebb műveletek esetén  |
+| Mezei Botond |  2020.09.27 13:56  |  c0c7563  |  abs(tan(0)-6)+6*log(10)^3  |  24  |  Igen  |  Precedencia helyessége összetettebb műveletek esetén  |
 | Bartha Balázs | 2020.09.27 11:20 | d52fae5 | Dark mode színséma kiválasztása | Az oldal a style_dark.css-re vált | Igen | A színsémaválasztó lista működése |
 | Bartha Balázs | 2020.09.27 11:23 | d52fae5 | Dark mode színséma kiválasztása után f5 gombbal frissítés | Továbbra is a dark mode van kiválasztva, és még mndig a style_dark.css az aktív | Igen | A színsémaválasztó lista működése |
 | Bartha Balázs | 2020.09.27 11:26 | d52fae5 | Hosszabb kifejezés beírása, mint ami egy sorban elfér | Az output terület görgethetővé válik | Igen | Az output_area helyes CSS beállítását |
