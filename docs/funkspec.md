@@ -27,9 +27,9 @@ Annak érdekében, hogy hatékonyan nyomon tudják követni a felhasználók, ho
 
 Rendszerre vonatkozó szabályok
 ------------------------------
-Az alkalmazást be lehessen integrálni a cég jelenlegi webes rendszerébe. Ehhez szabványos web eszközök használata szükséges: JavaScript, HTML, CSS.
-Az alkalmazásban használt számok akár bizalmas adatok is lehetnek, ezért ne tároljuk őket semmilyen más, külső szerveren, csak a cég férjen ezekhez hozzá.
-A program működése során a matematikai szabályoknak tegyen eleget, biztosítva a helyes működést.
+Az alkalmazás a szabványos web eszközök felhasználásával készül el (JavaScript, HTML, CSS), annak érdekében, hogy a merendelő jelenlegi webes rendszerébe integrálható legyen.
+Az elvégzett műveletek, és azok eredményeinek tárolása biztonsági szempontból kiemelendő. Ezek bizalmasak is lehetnek, ezért fontos, hogy azokat csak az adott munkamenetben tudjuk elérni, így csak a felhasználó érheti el azokat.
+A program helyes működésének biztosítása érdekében elengedhetetlen a matematikai szabályoknak való eleget tevés.
 
 Jelenlegi üzleti folyamatok
 ---------------------------
