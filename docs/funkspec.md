@@ -68,6 +68,7 @@ Követelménylista
 - K08: Kellemes színvilág
     - Sötét mód
     - Színvak mód
+- K09: Előző számítások visszatöltése
 
 Használati esetek
 -----------------
