@@ -69,6 +69,7 @@ Követelménylista
     - Sötét mód
     - Színvak mód
 - K09: Előző számítások visszatöltése
+- K10: Alap műveletek elvégzése billentyűzet használatával (+, -, *, /, ^)
 
 Használati esetek
 -----------------
