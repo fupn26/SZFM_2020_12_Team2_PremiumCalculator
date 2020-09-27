@@ -15,6 +15,7 @@ Tesztelési jegyzőkönyv
 | Fürjes-Benke Péter | 2020.09.27. 12:09 | d52fae5 | Enter megnyomása azután, hogy az egérrel rákattintottunk egy gombra a felületen. | Kiértékelődik az eddig beírt kifejezés. | Igen | Annak vizsgálata, hogy az Enter billentyű minden esetben a kiértékelést végzi el és nem egy fókuszban maradt gomb műveletét. |
 | Fürjes-Benke Péter | 2020.09.17. 12:51 | 3da707d | Az Enter megnyomása és a kifejezés kiértékelése. | A kiértékelt kifejezés és annak eredménye megjelenik a History-ban. | Igen | Annak vizsgálata, hogy az elvégzett műveletek bekerülnek-e a History-ba. |
 | Fürjes-Benke Péter | 2020.09.17. 12:59 | 3da707d | Calculation History egyik sorára való rákattintás. | Az adott sorban lévő kifejezés betöltődik a kimeneti területbe. | Igen | Annak vizsgálata, hogy helyesen működik-e az előzmények visszatöltése. |
+| Fürjes-Benke Péter | 2020.09.17. 18:29 | b2c098c | A "^" jel bevitele billentyűvel. | A hatványozás műveletet jelölő "^" megjelenik a kimenet részen. | Igen | A "^" billentyű lenyomásának helyes működésének vizsgálata. |
 | Szabó Benedek |  2020.09.27 11:15 | d52fae5  | 55+6  |  61 | Igen  | Összeadás művelet helyessége |
 | Szabó Benedek |  2020.09.27 11:15 |  d52fae5 | 46-62  | -16  | Igen  | Kivonás művelet helyessége |
 | Szabó Benedek | 2020.09.27 11:15  |  d52fae5 | 63*5  | 315  | Igen  | Szorzás művelet helyessége |
