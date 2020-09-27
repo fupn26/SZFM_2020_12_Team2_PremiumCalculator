@@ -44,7 +44,7 @@ A felületnek intuitívnak, egyértelműnek kell lennie, hogy mindenki el tudjon
 
 Fontos elvárás, hogy az alkalmazás a matematikai szabályoknak maradéktalanul eleget tegyen, ugyanis ez nagyon fontos a megrendelő számára. A négy alapműveleten túl is szükség van matematikai műveletekre (K06), kiemelt fontosságú ezek közül a hatványozás, mert ez nagyon sok könyveléshez szükséges számolás esetén elengedhetetlen, mint például a kamatos kamat, jelenérték vagy jövőérték kiszámítása. Az elvégzendő operációt jelenítsük meg, illetve a számokat három számjegyenként tördeljük a könnyebb olvashatóság érdekében. A szám-, illetve operációgombok megjelenésükben különüljenek el. Szükséges továbbá egy Clear gomb is, mely törli az eddig beütött inputokat. A maximum számjegylimit a JavaScript segítségével kerül megoldásra, melyben bizonyos számú karakternél nem enged a rendszer többet egyszerre beírni.
 
-Az alkalmazásban használt számok akár bizalmas adatok is lehetnek, ezért ne tároljuk őket semmilyen más, külső szerveren, csak a cég férjen ezekhez hozzá.
+Az alkalmazásban használt számok akár bizalmas adatok is lehetnek. Ez a számítási történet tárolásánál fog szerepet játszani. Az eltárolt számítások és eredményeik csupán az adott munkamenetre vonatkoznak, így egy oldalfrissítés vagy bezárást követően azok már nem elérhetőek semmilyen módon sem. A műveletek egy gördíthető listában jelennek meg, pontosan mutatva az elvégzett műveleteket és azok eredményét, így teljes egészében visszakövethető a számolás menete.
 
 A rendszernek nem célja, hogy teljes mértékben helyettesítsen egy tudományos számológépet. Továbbá a korábbi rendszerbe integrálás nem képezi a projekt részét, pusztán a beépítés lehetőségeihez teremti elő az alkalmazás oldaláról szükséges feltételeket.
 
