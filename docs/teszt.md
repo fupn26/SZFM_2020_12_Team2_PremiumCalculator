@@ -50,5 +50,5 @@ Tesztelési jegyzőkönyv
 | Bartha Balázs | 2020.09.27 11:36 | ff27a42 | ((()) | Error: unbalanced brackets | Igen | Az egyenlőtlen zárójelszám esetén történő hibakiírás |
 | Bartha Balázs | 2020.09.27 11:38  | ff27a42 | ) * (  | Error: unbalanced brackets | Igen | Az utolsó zárójel nyíltsága esetén történő hibakiírás |
 | Bartha Balázs | 2020.09.27 11:40 | ff27a42 | ANS gomb lenyomása oldal betöltése után azonnal | Semmi | Igen | Az ANS gomb használatának tiltása, mikor még nincs a memóriában eredmény |
-| Bartha Balázs | 2020.09.27 11:42 | ff27a42 | ANS gomb lenyomása 6+5 múvelet elvégzése után  | 11 | Igen  | Az ANS gomb helyes működése |
+| Bartha Balázs | 2020.09.27 11:42 | ff27a42 | ANS gomb lenyomása 6+5 művelet elvégzése után  | 11 | Igen  | Az ANS gomb helyes működése |
 | Bartha Balázs | 2020.09.27 11:44  | ff27a42 | 5 gomb tízszeri lenyomása | 5,555,555,555  | Igen | Nagy számok helyes tördelése |
