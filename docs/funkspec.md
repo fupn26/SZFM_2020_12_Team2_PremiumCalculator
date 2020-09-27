@@ -10,6 +10,7 @@ Rendszer céljai, nem céljai
 * intuitív felhasználói felületet biztosítson.
 * a felhasználói felületet személyre szabható legyen, ezzel hatékonyabbá téve az egyes részlegeken dolgozók munkáját.
 * teljesen platformfüggetlen legyen.
+* az adott munkamenetben történő számításokat listázni tudja.
 
 ### A rendszernek nem célja, hogy:
 * teljesen helyettesítse a tudományos számológépeket.
