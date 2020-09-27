@@ -75,7 +75,7 @@ Követelmények
     - JavaScript segítségvel lesz elérve ez a funkcionalitás. 
     - Külön függvények fogják tartalmazni, hogy a felhasználó teljes törlést szeretne, vagy csak az utolsó beírt karakter törlését. 
     - Az utolsó karakter törlését megoldhatjuk a __splice()__ fügvénnyel.
-    - A teljes törlést pedig az input mező értékének a üres stringgé alakításával valósítjuk meg.
+    - A teljes törlést pedig az input mező értékének üres stringgé alakításával valósítjuk meg.
 - K06 (Matematikai műveletek): 
     - A matematikai műveletek megvalósításához a JavaScript Math objektuma lesz használva. 
     - Annak függvényében, hogy egy vagy két paraméteres műveletről van szó, a program az adott inputra azonnal visszaadja az eredményt vagy pedig vár a második paraméterre. 
@@ -85,7 +85,20 @@ Követelmények
 - K08 (Kellemes színvilág):
     - A program *normál*, *sötét* és *színvak* módokat biztosítja.
     - Mindegyik mód kap egy külön CSS fájlt, mely meghatározza az egyes HTML elemek színét.
-    - A módok közötti váltás a JavaScript kódon belül, az aktuális stílusfájl kicserélésével történik. 
+    - A módok közötti váltás a JavaScript kódon belül, az aktuális stílusfájl kicserélésével történik.
+- K09 (Előzmények):
+    - A program lehetőséget nyújt korábbi műveletek visszatöltésére.
+    - Minden művelet elvégzése után egy új bejegyzés kerül felvételre az előzményekbe.
+    - A felhasználó egérrel tud választani a korábbi számítások között a Calculation History panelben.
+    - Az előzmény visszatöltése során a teljes kifejezés töltődik vissza, és nem annak az eredménye, ha a felhasználó egérrel választja azt ki.
+    - Abban az esetben, ha a felhasználó az ANS gombot használja, az utolsó számítás eredménye töltődik vissza.
+- K10 (Billentyűzet):
+    - A felhasználónak lehetősége billentyűzettel beírni a kívánt műveletet.
+    - Az összeadás, kivonás, szorzás, osztás, hatványozás áll rendelkezésre a műveletek közül. Valamint lehet zárójeleket beírni és negatív számokat is.
+    - A program külön kezeli, hogy a "-" jel bevitelekor szám-e az utolsó karakter. Ha nem, akkor negatív előjelnek veszi, ha pedig igen, akkor kivonásnak.
+    - Ezeken felül lehet törölni karakterenként a Backspace billentyűvel, valamint az Enter és a "=" billentyű lenyomásával lehet a beírt kifejezést kiértékelni.
+    - A program tizedespontot használ a tizedesszámok reprezentálásához, viszont a "." kívül a "," billentyű is használható tizedespont beírásához.
+
 
 Tesztterv
 ---------
