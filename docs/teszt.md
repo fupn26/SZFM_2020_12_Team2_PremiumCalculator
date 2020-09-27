@@ -41,13 +41,13 @@ Tesztelési jegyzőkönyv
 | Mezei Botond |  2020.09.27 12:00  |  8b14297  |  -7^3  |  -343  |  Igen  |  Hatványozás operáció helyessége  |
 | Mezei Botond |  2020.09.27 12:01  |  8b14297  |  3*sin(pi/2)+4  |  7  |  Igen  |  Precedencia helyessége összetettebb műveletek esetén  |
 | Mezei Botond |  2020.09.27 12:04  |  8b14297  |  3+2/6-9*sin(6+3)  |  -0.375733034  |  Igen  |  Precedencia helyessége összetettebb műveletek esetén  |
-| Bartha Balázs | 2020.09.27 11:20 | d52fae5 | dark mode színséma kiválasztása | az oldal a style_dark.css-re vált | Igen | a színsémaválasztó lista működése |
-| Bartha Balázs | 2020.09.27 11:23 | d52fae5 | dark mode színséma kiválasztása után f5 gombbal frissítés | továbbra is a dark mode van kiválasztva, és még mndig a style_dark.css az aktív | Igen | a színsémaválasztó lista működése |
-| Bartha Balázs | 2020.09.27 11:26 | d52fae5 | hosszabb kifejezés beírása, mint ami egy sorban elfér | az output terület görgethetővé válik | Igen | az output_area helyes CSS beállítását |
-| Bartha Balázs | 2020.09.27 11:31 | ff27a42 | egy 0, majd egy 5 számjegy beírása | 5 |  Igen | Az 1-nél nagyobb számok 0 karakterrel való kezdésének tiltása |
-| Bartha Balázs | 2020.09.27 11:34 | ff27a42 | egy 0, egy tizedespont, majd egy 3 számjegy beírása  | 0.3 | Igen  | Az 1-nél kisebb számok 0 karakterrel való kezdésének engedélyezése |
-| Bartha Balázs | 2020.09.27 11:36 | ff27a42 | ((()) | Error: unbalanced brackets | Igen | az egyenlőtlen zárójelszám esetén történő hibakiírás |
-| Bartha Balázs | 2020.09.27 11:38  | ff27a42 | ) * (  | Error: unbalanced brackets | Igen | az utolsó zárójel nyíltsága esetén történő hibakiírás |
-| Bartha Balázs | 2020.09.27 11:40 | ff27a42 | ANS gomb lenyomása oldal betöltése után azonnal | semmi | Igen | az ANS gomb használatának tiltása, mikor még nincs a memóriában eredmény |
-| Bartha Balázs | 2020.09.27 11:42 | ff27a42 | ANS gomb lenyomása 6+5 múvelet elvégzése után  | 11 | Igen  | az ANS gomb helyes működése |
-| Bartha Balázs | 2020.09.27 11:44  | ff27a42 | 5 gomb tízszeri lenyomása | 5,555,555,555  | Igen | nagy számok helyes tördelése |
+| Bartha Balázs | 2020.09.27 11:20 | d52fae5 | Dark mode színséma kiválasztása | Az oldal a style_dark.css-re vált | Igen | A színsémaválasztó lista működése |
+| Bartha Balázs | 2020.09.27 11:23 | d52fae5 | Dark mode színséma kiválasztása után f5 gombbal frissítés | Továbbra is a dark mode van kiválasztva, és még mndig a style_dark.css az aktív | Igen | A színsémaválasztó lista működése |
+| Bartha Balázs | 2020.09.27 11:26 | d52fae5 | Hosszabb kifejezés beírása, mint ami egy sorban elfér | Az output terület görgethetővé válik | Igen | Az output_area helyes CSS beállítását |
+| Bartha Balázs | 2020.09.27 11:31 | ff27a42 | Egy 0, majd egy 5 számjegy beírása | 5 |  Igen | Az 1-nél nagyobb számok 0 karakterrel való kezdésének tiltása |
+| Bartha Balázs | 2020.09.27 11:34 | ff27a42 | Egy 0, egy tizedespont, majd egy 3 számjegy beírása  | 0.3 | Igen  | Az 1-nél kisebb számok 0 karakterrel való kezdésének engedélyezése |
+| Bartha Balázs | 2020.09.27 11:36 | ff27a42 | ((()) | Error: unbalanced brackets | Igen | Az egyenlőtlen zárójelszám esetén történő hibakiírás |
+| Bartha Balázs | 2020.09.27 11:38  | ff27a42 | ) * (  | Error: unbalanced brackets | Igen | Az utolsó zárójel nyíltsága esetén történő hibakiírás |
+| Bartha Balázs | 2020.09.27 11:40 | ff27a42 | ANS gomb lenyomása oldal betöltése után azonnal | Semmi | Igen | Az ANS gomb használatának tiltása, mikor még nincs a memóriában eredmény |
+| Bartha Balázs | 2020.09.27 11:42 | ff27a42 | ANS gomb lenyomása 6+5 múvelet elvégzése után  | 11 | Igen  | Az ANS gomb helyes működése |
+| Bartha Balázs | 2020.09.27 11:44  | ff27a42 | 5 gomb tízszeri lenyomása | 5,555,555,555  | Igen | Nagy számok helyes tördelése |
