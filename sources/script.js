@@ -13,6 +13,7 @@ const inputOperationButtons = document.querySelectorAll('[input-operation]');
 const inputConstant = document.querySelector('[input-constant]');
 
 var isResultShown = false;
+var isAnsPressed = false;
 
 var operators = [
     {
