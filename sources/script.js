@@ -233,18 +233,21 @@ function applyOperator(operator, vals) {
 }
 
 equalsButton.addEventListener('click', event => {
+    isAnsPressed = false;
     displayExpression();
     calculate();
     event.currentTarget.blur();
 });
 
 clearButton.addEventListener('click', event => {
+    isAnsPressed = false;
     tokens = [];
     displayExpression();
     event.currentTarget.blur();
 });
 
 deleteButton.addEventListener('click', event => {
+    isAnsPressed = false;
     const prevToken = tokens[tokens.length - 1];
     if (!isNaN(prevToken)) {
         tokens[tokens.length - 1] = prevToken.slice(0, -1);
@@ -268,6 +271,7 @@ ansButton.addEventListener('click', event => {
             tokens.push("*");
         }
         tokens.push(prevResult.toString());
+        isAnsPressed = true;
         displayExpression();
         event.currentTarget.blur();
     }
@@ -284,19 +288,27 @@ inputNumberButtons.forEach(element => element.addEventListener('click', event =>
     if (prevToken == "0"){
         tokens[tokens.length - 1] = element.value
     } else if (!isNaN(prevToken)) {
-        tokens[tokens.length - 1] = prevToken + element.value;
+        if (isAnsPressed === true){
+            tokens.push("*");
+            tokens.push(element.value);
+        }else{
+            tokens[tokens.length - 1] = prevToken + element.value;
+        }
+        
     } else if (prevToken === ")" || prevToken === "pi") {
         tokens.push("*");
         tokens.push(element.value);
     } else {
         tokens.push(element.value);
     }
+    isAnsPressed = false;
     displayExpression();
     event.currentTarget.blur();
 }));
 
 inputOperationButtons.forEach(element => element.addEventListener('click', event => {
     const value = element.value;
+    isAnsPressed = false;
     if (value === "sin" || value === "cos" || value == "tan" ||
         value === "abs" || value === "log" || value === "sqrt") {
         if (!isNaN(tokens[tokens.length-1]) || tokens[tokens.length-1] === "pi" || tokens[tokens.length-1] === ")"){
@@ -333,6 +345,7 @@ inputOperationButtons.forEach(element => element.addEventListener('click', event
 }));
 
 inputConstant.addEventListener('click', event => {
+    isAnsPressed = false;
     if (!isNaN(tokens[tokens.length-1]) || tokens[tokens.length-1] === "pi" || tokens[tokens.length-1] === ")"){
         tokens.push("*");
     }
