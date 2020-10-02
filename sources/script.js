@@ -14,6 +14,7 @@ const inputConstant = document.querySelector('[input-constant]');
 
 var isResultShown = false;
 var isAnsPressed = false;
+var isHistoryPressed = false;
 
 var operators = [
     {
@@ -515,6 +516,7 @@ function displayExpressionInHistory() {
         node.addEventListener('click', event => {
             const arrayElement = calcHistory.find(element => element.expression === event.currentTarget.innerHTML);
             tokens = arrayElement.tokens;
+            isHistoryPressed = true;
             displayExpression();
         });
         historyList.appendChild(node);
