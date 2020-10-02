@@ -28,6 +28,8 @@ Tesztelési jegyzőkönyv
 | Szabó Benedek |  2020.09.27 11:15 | d52fae5  | pi = | 3.141592653589793  |  Igen | Helyes pi érték |
 | Szabó Benedek |  2020.10.02 10:50 | 5be5ade  | ans 3 | 62 * 3  |  Igen | Ans után írt szám helyes viselkedése |
 | Szabó Benedek |  2020.10.02 10:50 | 5be5ade  | ans 11 | 186 * 11  |  Igen | Ans után írt szám helyes viselkedése |
+| Szabó Benedek |  2020.10.02 11:10 | 6f18509  | history -> 3| 6 + 6 * 3  |  Igen | History-ra kattintás utáni szám helyes viselkedése |
+| Szabó Benedek |  2020.10.02 11:10 | 6f18509  | history 3 3| 6 + 6 * 33  |  Igen | History-ra kattintás utáni szám helyes viselkedése |
 | Mezei Botond |  2020.09.27 11:50  |  8b14297  |  sin(0)  |  0  |  Igen  |  Szinusz operáció helyessége  |
 | Mezei Botond |  2020.09.27 11:51  |  8b14297  |  sin(5*pi/2)  |  1  |  Igen  |  Szinusz operáció helyessége  |
 | Mezei Botond |  2020.09.27 11:53  |  8b14297  |  cos(0)  |  1  |  Igen  |  Koszinusz operáció helyessége  |
